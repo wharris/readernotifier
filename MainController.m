@@ -138,7 +138,6 @@
 	int count = [array count];
 	int major = (count >= 1) ? [[array objectAtIndex:0] intValue] : 0;
 	int minor = (count >= 2) ? [[array objectAtIndex:1] intValue] : 0;
-	int bugfix = (count >= 3) ? [[array objectAtIndex:2] intValue] : 0;
 
 	if (major > 10 || major == 10 && minor >= 5) {
 		isLeopard = YES;
