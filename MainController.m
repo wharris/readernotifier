@@ -814,7 +814,7 @@
 					[feedstring release];
 					
 					if ([[prefs valueForKey:@"openTorrentAfterDownloading"] boolValue] == YES) {
-						if (runningDebug == 1) NSLog([NSString stringWithFormat:@"%@/%@", [prefs valueForKey:@"torrentCastFolderPath"], [NSString stringWithFormat:@"%@.torrent", [titles objectAtIndex:i]]]);
+						if (runningDebug == 1) NSLog(@"%@/%@", [prefs valueForKey:@"torrentCastFolderPath"], [NSString stringWithFormat:@"%@.torrent", [titles objectAtIndex:i]]);
 						[[NSWorkspace sharedWorkspace] openFile:[NSString stringWithFormat:@"%@/%@", [prefs valueForKey:@"torrentCastFolderPath"], [NSString stringWithFormat:@"%@.torrent", [titles objectAtIndex:i]]]];
 					}					
 					
